@@ -1,16 +1,16 @@
-# rtems-notes
+### rtems-notes
 
-#make patch
+# make patch
 
 git format-patch -1 master
 
 -1 for last commit
 
 
-#send email
+# send email
 git send-email pathtopatch
 
-#configure email
+# configure email
 sudo apt-get install git-email
     smtpserver = smtp.googlemail.com
     smtpencryption = tls
