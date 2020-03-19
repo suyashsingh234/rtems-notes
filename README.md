@@ -12,8 +12,12 @@ git send-email pathtopatch
 
 # configure email
 sudo apt-get install git-email
-    smtpserver = smtp.googlemail.com
-    smtpencryption = tls
-    smtpserverport = 587
-    smtpuser = youremail@gmail.com
+
+smtpserver = smtp.googlemail.com
+    
+smtpencryption = tls
+    
+smtpserverport = 587
+    
+smtpuser = youremail@gmail.com
    
