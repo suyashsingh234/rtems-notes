@@ -2,9 +2,10 @@
 
 # make patch
 
-git format-patch -1 master
+git format-patch -1 master -o mypatch
 
 -1 for last commit
+-o for output directory
 
 
 # send email
