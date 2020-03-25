@@ -22,4 +22,9 @@ smtpencryption = tls
 smtpserverport = 587
     
 smtpuser = youremail@gmail.com
-   
+
+##Clang Static Analyzer
+It works with the existing build system
+
+##LLVM Sanitizer
+They are dynamic(run time)
