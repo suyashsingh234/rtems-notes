@@ -42,8 +42,6 @@ mkdir build (in-tree build is not supported)
 
 cd build
 
-cmake -DLLVM_ENABLE_PROJECTS=clang -G "Unix Makefiles" ../llvm
-
 cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_PROJECTS=lld -DCMAKE_INSTALL_PREFIX=/usr/local ../llvm
 
 sudo make install
@@ -56,7 +54,9 @@ mkdir build2
 
 cd build2
 
+sudo apt-get install g++
 
+cmake -DLLVM_ENABLE_PROJECTS=clang -G "Unix Makefiles" ../llvm
 
 
 ## LLVM Sanitizer
