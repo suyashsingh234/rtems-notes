@@ -39,7 +39,7 @@ cmake -DLLVM_ENABLE_PROJECTS=clang -G "Unix Makefiles" ../llvm
 
 cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_PROJECTS=lld -DCMAKE_INSTALL_PREFIX=/usr/local ../llvm
 
-make install
+sudo make install
 
 ## LLVM Sanitizer
 
