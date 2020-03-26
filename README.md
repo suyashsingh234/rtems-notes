@@ -32,7 +32,9 @@ smtpuser = youremail@gmail.com
 
 It works with the existing build system
 
-### Building it
+### Building it (Ubuntu)
+
+Ensure at least 2 GB free space in root partition
 
 cd llvm-project
 
