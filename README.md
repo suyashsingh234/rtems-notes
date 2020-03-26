@@ -48,6 +48,9 @@ cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_PROJECTS=lld -DCMAKE_INSTALL_PREF
 
 sudo make install
 
+sudo ln -s /usr/local/bin/ld.lld /usr/bin/ld --force
+
+
 ## LLVM Sanitizer
 
 They are dynamic(run time)
