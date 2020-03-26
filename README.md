@@ -13,6 +13,11 @@ git format-patch -1 master -o mypatch
 git send-email pathtopatch
 
 ## configure email
+
+Change directory to where you want the llvm directory placed.
+
+git clone https://github.com/llvm/llvm-project.git
+
 sudo apt-get install git-email
 
 smtpserver = smtp.googlemail.com
