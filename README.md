@@ -38,6 +38,8 @@ Ensure at least 2 GB free space in root partition
 
 cd llvm-project
 
+#### use lld as linker instead of ld
+
 mkdir build (in-tree build is not supported)
 
 cd build
@@ -50,6 +52,8 @@ sudo ln -s /usr/local/bin/ld.lld /usr/bin/ld --force
 
 cd ..
 
+#### build clang and llvm 
+
 mkdir build2
 
 cd build2
@@ -57,6 +61,8 @@ cd build2
 sudo apt-get install g++
 
 cmake -DLLVM_ENABLE_PROJECTS=clang -G "Unix Makefiles" ../llvm
+
+sudo make
 
 
 ## LLVM Sanitizer
