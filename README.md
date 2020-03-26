@@ -50,6 +50,14 @@ sudo make install
 
 sudo ln -s /usr/local/bin/ld.lld /usr/bin/ld --force
 
+cd ..
+
+mkdir build2
+
+cd build2
+
+
+
 
 ## LLVM Sanitizer
 
