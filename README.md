@@ -64,6 +64,11 @@ cmake -DLLVM_ENABLE_PROJECTS=clang -G "Unix Makefiles" ../llvm
 
 sudo make
 
+add the following to your path:
+The location of the clang binary.
+The locations of the scan-build and scan-view programs
+
+scan-build, scan-view and clang should be in <path to llvm sources>/llvm-project/build2/bin 
 
 ## LLVM Sanitizer
 
