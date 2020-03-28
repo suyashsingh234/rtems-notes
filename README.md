@@ -72,7 +72,7 @@ The location of the clang binary.
 
 The locations of the scan-build and scan-view programs
 
-scan-build, scan-view and clang should be in <path to llvm sources>/llvm-project/build2/bin 
+scan-build, scan-view and clang should be in "path to llvm sources/llvm-project/build2/bin" 
     
 open terminal
 
@@ -80,7 +80,7 @@ gedit ~/.bashrc
 
 at the last line add
 
-export PATH=<path to llvm sources>/llvm-project/build2/bin:$PATH
+export PATH=path to llvm sources/llvm-project/build2/bin:$PATH
 
 ## LLVM Sanitizer
 
