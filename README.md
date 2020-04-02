@@ -1,5 +1,11 @@
 # rtems-notes
 
+# -fuse-ld
+
+use command -fuse-ld=/linker/ to change linker
+
+example gcc -fuse-ld=lld main.c
+
 ## make patch
 
 git format-patch -1 master -o mypatch
