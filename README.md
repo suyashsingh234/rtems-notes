@@ -97,3 +97,5 @@ mkdir build_sanitizer
 cd build_sanitizer
 
 cmake ../llvm
+
+cmake --build .
