@@ -1,8 +1,8 @@
 # rtems-notes
 
-# -fuse-ld
+## -fuse-ld
 
-use command -fuse-ld=/linker/ to change linker
+use command -fuse-ld=/linker/ to change linker temporarily
 
 example gcc -fuse-ld=lld main.c
 
