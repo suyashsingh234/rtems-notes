@@ -91,3 +91,9 @@ export PATH=path to llvm sources/llvm-project/build2/bin:$PATH
 ## LLVM Sanitizer
 
 They are dynamic(run time)
+
+mkdir build_sanitizer
+
+cd build_sanitizer
+
+cmake ../llvm
