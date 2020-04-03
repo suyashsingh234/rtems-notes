@@ -98,4 +98,6 @@ cd build_sanitizer
 
 cmake ../llvm
 
-cmake --build .
+cmake --build .   (notice the dot)
+
+sudo cmake --build . --target install
