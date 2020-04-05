@@ -111,3 +111,5 @@ cd build-compiler-rt
 cmake ../compiler-rt -DLLVM_CONFIG_PATH=/path/to/llvm-config inside build_sanitizer
 
 make
+
+now paste to correct location if error message
