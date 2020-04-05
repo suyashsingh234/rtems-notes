@@ -112,4 +112,4 @@ cmake ../compiler-rt -DLLVM_CONFIG_PATH=/path/to/llvm-config inside build_saniti
 
 make
 
-now paste to correct location if error message
+now paste build-compiler-rt/lib/linux directory to correct location if error message
