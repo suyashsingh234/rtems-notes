@@ -101,3 +101,13 @@ cmake ../llvm
 cmake --build .   (notice the dot)
 
 sudo cmake --build . --target install
+
+cd ..
+
+mkdir build-compiler-rt
+
+cd build-compiler-rt
+
+cmake ../compiler-rt -DLLVM_CONFIG_PATH=/path/to/llvm-config inside build_sanitizer
+
+make
