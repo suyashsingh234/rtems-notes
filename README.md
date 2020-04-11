@@ -113,3 +113,11 @@ cmake ../compiler-rt -DLLVM_CONFIG_PATH=/path/to/llvm-config inside build_saniti
 make
 
 now paste build-compiler-rt/lib/linux directory to correct location if error message
+
+## scan-build
+
+scan-build --use-cc=[path to compiler] [build]
+
+for example
+
+scan-build --use-cc=$HOME/quick-start/rtems/5/bin/sparc-rtems5-gcc make
