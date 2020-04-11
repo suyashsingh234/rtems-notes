@@ -121,3 +121,5 @@ scan-build --use-cc=[path to compiler] [build]
 for example
 
 scan-build --use-cc=$HOME/quick-start/rtems/5/bin/sparc-rtems5-gcc make
+
+scan-build also needs to run with the configure 
