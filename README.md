@@ -116,10 +116,24 @@ now paste build-compiler-rt/lib/linux directory to correct location if error mes
 
 ## scan-build
 
-scan-build --use-cc=[path to compiler] [build]
+export C_INCLUDE_PATH=<YOUR_TOOLCHAIN_PATH>/sparc-rtems5/include/:<YOUR_TOOLCHAIN_PATH>/lib/gcc/sparc-rtems5/7.3.0/include/
+
+export PATH=<YOUR_TOOLCHAIN_PATH>/bin:${PATH}
+
+scan-build --use-cc=<YOUR_TOOLCHAIN_PATH>/bin/sparc-rtems5-gcc --use-c++=<YOUR_TOOLCHAIN_PATH>/bin/sparc-rtems5-g++ --analyzer-target=sparc-rtems-unknown <configure>
+
+scan-build --use-cc=<YOUR_TOOLCHAIN_PATH>/bin/sparc-rtems5-gcc --use-c++=<YOUR_TOOLCHAIN_PATH>/bin/sparc-rtems5-g++ --analyzer-target=sparc-rtems-unknown make
+
+
 
 for example
 
-scan-build --use-cc=$HOME/quick-start/rtems/5/bin/sparc-rtems5-gcc make
+export C_INCLUDE_PATH=$HOME/quick-start/rtems/5/sparc-rtems5/include/:$HOME/quick-start/rtems/5/lib/gcc/sparc-rtems5/7.3.0/include/
+
+export PATH=$HOME/quick-start/rtems/5/bin:${PATH}
+
+scan-build --use-cc=$HOME/quick-start/rtems/5/bin/sparc-rtems5-gcc --use-c++=$HOME/quick-start/rtems/5/bin/sparc-rtems5-g++ <configure>
+
+scan-build --use-cc=$HOME/quick-start/rtems/5/bin/sparc-rtems5-gcc --analyzer-target=sparc-rtems-unknown make
 
 scan-build also needs to run with the configure 
