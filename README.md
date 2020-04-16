@@ -120,7 +120,7 @@ export C_INCLUDE_PATH=<YOUR_TOOLCHAIN_PATH>/sparc-rtems5/include/:<YOUR_TOOLCHAI
 
 export PATH=<YOUR_TOOLCHAIN_PATH>/bin:${PATH}
 
-scan-build --use-cc=<YOUR_TOOLCHAIN_PATH>/bin/sparc-rtems5-gcc --use-c++=<YOUR_TOOLCHAIN_PATH>/bin/sparc-rtems5-g++ --analyzer-target=sparc-rtems-unknown ../rtems/configure --target=sparc-rtems5 --disable-posix --enable-smp --enable-cxx --disable-networking --enable-drvmgr --disable-tests CFLAGS="-D__CLANG_ATOMICS -D__rtems__"  --enable-rtemsbsp=erc32
+scan-build --use-cc=<YOUR_TOOLCHAIN_PATH>/bin/sparc-rtems5-gcc --use-c++=<YOUR_TOOLCHAIN_PATH>/bin/sparc-rtems5-g++ --analyzer-target=sparc-rtems-unknown $HOME/quick-start/src/rtems/configure --target=sparc-rtems5 --disable-posix --enable-smp --enable-cxx --disable-networking --enable-drvmgr --disable-tests CFLAGS="-D__CLANG_ATOMICS -D__rtems__"  --enable-rtemsbsp=erc32
 
 scan-build --use-cc=<YOUR_TOOLCHAIN_PATH>/bin/sparc-rtems5-gcc --use-c++=<YOUR_TOOLCHAIN_PATH>/bin/sparc-rtems5-g++ --analyzer-target=sparc-rtems-unknown make
 
