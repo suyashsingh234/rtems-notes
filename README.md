@@ -116,7 +116,7 @@ now paste build-compiler-rt/lib/linux directory to correct location if error mes
 
 ## scan-build
 
-remove all const from /quick-start/rtems/5/sparc-rtems5/erc32/lib/include/rtems/score/cpustdatomic.h
+remove all "const" from /quick-start/rtems/5/sparc-rtems5/erc32/lib/include/rtems/score/cpustdatomic.h
 
 export C_INCLUDE_PATH=<YOUR_TOOLCHAIN_PATH>/sparc-rtems5/include/:<YOUR_TOOLCHAIN_PATH>/lib/gcc/sparc-rtems5/7.3.0/include/
 
