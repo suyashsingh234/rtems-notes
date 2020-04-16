@@ -128,6 +128,7 @@ scan-build --use-cc=<YOUR_TOOLCHAIN_PATH>/bin/sparc-rtems5-gcc --use-c++=<YOUR_T
 
 for example
 
+```
 export C_INCLUDE_PATH=$HOME/quick-start/rtems/5/sparc-rtems5/include/:$HOME/quick-start/rtems/5/lib/gcc/sparc-rtems5/7.3.0/include/
 
 export PATH=$HOME/quick-start/rtems/5/bin:${PATH}
@@ -136,4 +137,5 @@ scan-build --use-cc=$HOME/quick-start/rtems/5/bin/sparc-rtems5-gcc --use-c++=$HO
 
 scan-build --use-cc=$HOME/quick-start/rtems/5/bin/sparc-rtems5-gcc --analyzer-target=sparc-rtems-unknown make
 
+```
 scan-build also needs to run with the configure 
