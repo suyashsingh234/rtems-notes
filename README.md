@@ -163,7 +163,7 @@ export PATH=$HOME/quick-start/rtems/5/bin:${PATH}
 scan-build --use-cc=$HOME/quick-start/rtems/5/bin/sparc-rtems5-gcc --use-c++=$HOME/quick-start/rtems/5/bin/sparc-rtems5-g++  --analyzer-target=sparc-rtems-unknown $HOME/quick-start/src/rtems/configure --target=sparc-rtems5 --disable-posix --enable-smp --enable-cxx --disable-networking --enable-drvmgr --disable-tests CFLAGS="-D__CLANG_ATOMICS -D__rtems__"  --enable-rtemsbsp=leon2
 
 scan-build --use-cc=$HOME/quick-start/rtems/5/bin/sparc-rtems5-gcc --analyzer-target=sparc-rtems-unknown make
-
+```
 paths maybe different than those given
 
 scan-build also needs to run with the configure 
