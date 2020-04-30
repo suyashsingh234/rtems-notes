@@ -170,4 +170,4 @@ scan-build also needs to run with the configure
 
 ## ubsan
 
-clang -target <architecture> -I<includefile1> I<includefile2> file.c
+clang -target < architecture > -I< includefile1 > -I< includefile2 > file.c
