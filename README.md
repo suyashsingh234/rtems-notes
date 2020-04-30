@@ -170,4 +170,9 @@ scan-build also needs to run with the configure
 
 ## ubsan
 
+export PATH=$HOME/quick-start/rtems/5/bin:"$PATH"
+
 clang -target < architecture > -I< includefile1 > -I< includefile2 > file.c
+
+### for sparc 
+-target sparc-unknown-rtems5
