@@ -167,3 +167,7 @@ scan-build --use-cc=$HOME/quick-start/rtems/5/bin/sparc-rtems5-gcc --analyzer-ta
 paths maybe different than those given
 
 scan-build also needs to run with the configure 
+
+## ubsan
+
+clang -target <architecture> -I<includefile1> I<includefile2> file.c
