@@ -170,6 +170,8 @@ scan-build also needs to run with the configure
 
 ## ubsan
 
+use clang with -integrated-as to use llvm-as instead of system assembler(usr/bin/as)
+
 export PATH=$HOME/quick-start/rtems/5/bin:"$PATH"
 
 clang -target < architecture > -I< includefile1 > -I< includefile2 > file.c
