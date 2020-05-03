@@ -174,7 +174,7 @@ use clang with -integrated-as to use llvm-as instead of system assembler(usr/bin
 
 export PATH=$HOME/quick-start/rtems/5/bin:"$PATH"
 
-clang -target < architecture > -I< includefile1 > -I< includefile2 > file.c
+clang -integrated-as -fuse-ld=lld -target < architecture > -I< includefile1 > -I< includefile2 > file.c
 
 ### for sparc 
 -target sparc-unknown-rtems5
