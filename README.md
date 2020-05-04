@@ -66,7 +66,7 @@ cd build2
 
 sudo apt-get install g++
 
-cmake -DLLVM_ENABLE_PROJECTS=clang -G "Unix Makefiles" ../llvm
+cmake DLLVM_TARGETS_TO_BUILD=all -DLLVM_ENABLE_PROJECTS=clang -G "Unix Makefiles" ../llvm
 
 sudo make
 
